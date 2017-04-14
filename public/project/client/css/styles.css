@@ -1,0 +1,398 @@
+/*
+ * Base structure
+ */
+
+/* Move down content in body */
+body {
+    padding-top: 100px;
+    background-color: #f1f1f1;
+    font-weight: 100;
+}
+h1{
+    color: #00897B;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 110px;
+    }
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+    color: #00897B !important;
+}
+.page-header{
+    color: #00897B !important;
+}
+.postButtons{
+    background-color: #00897B !important;
+    border-color: #00897B !important;
+    margin-top: 5px;
+    color: white !important;
+}
+
+.whiteButton{
+    margin-top: 5px;
+    color: white !important;
+}
+.glypColor{
+    color: #00897B !important;
+}
+.removePadding{
+    padding: 0px;
+}
+.buttonText{
+    font-size: 15px;
+}
+
+.moveRight{
+    padding-left: 60px;
+}
+.moveButton{
+    padding-left: 25px;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+
+#searchbar {
+    margin-bottom: 12px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#searchUserBar {
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+
+#search-banners-1{
+
+    text-align: center;
+}
+.goUp{
+    margin-top: -4px;
+}
+#search-banners{
+    text-decoration: underline;
+    text-align: center;
+}
+#searchByGenre {
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+/*Push the searchbar down on desktop*/
+@media (min-width: 768px) {
+    #searchbar {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #searchbar {
+        margin-top: -20px;
+    }
+}
+
+/*To fit the logo in header*/
+.navbar-header {
+    height:90px;
+    width : 90px;
+}
+.navbar-header img {
+    width:auto;
+}
+
+.footer-text{
+    color: white;
+}
+
+a{
+    color: #00897B !important;
+}
+
+/*To offset the searchbar */
+#logo {
+    margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+/*Align the links to center on desktop*/
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+/*Text area width*/
+@media (min-width: 768px) {
+    .textarea {
+        width:66%;
+        padding-bottom: 15px;
+    }
+}
+
+/*Align the labels to left*/
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+}
+/*No wrap */
+.nowrap {
+    white-space: nowrap;
+}
+/*Rounding a badge*/
+.label-as-badge {
+    border-radius: 1em;
+
+}
+.label-default{
+    background-color: #00897B !important;
+}
+/*Star rating*/
+.star-rating {
+    font-size: 0px;
+    padding-top: 5px;
+}
+.star-rating s:hover {
+    color: #ff961a;
+}
+
+.star-rating s,
+.star-rating-rtl s {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+    line-height: 0px;
+    font-size: 30px;
+}
+.star-rating-big s {
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .star-rating-big s {
+        font-size: 30px;
+    }
+}
+
+.star-rating-rtl {
+    background: #555;
+    display: inline-block;
+    border: 2px solid #444;
+}
+.star-rating-rtl s {
+    color: yellow;
+}
+.star-rating s:hover:before{
+    content: "\2605";
+}
+.star-rating s:before {
+    content: "\2606";
+}
+.star-rating-rtl s:hover:after{
+    content: "\2605";
+}
+.star-rating-rtl s:after {
+    content: "\2606";
+}
+
+/*
+ui.bootstrap.rating
+*/
+.rating-star {
+    font-size: x-large;
+    text-shadow: .05em .05em #aaa;
+    padding: 1px;
+    color: #ec971f;
+}
+
+.changing-star {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .rating-star {
+        font-size: medium;
+    }
+}
+
+h4.smallheader {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.thumbnail {
+    background-color: white;
+    border-radius: 0px;
+}
+.logoPosition{
+    margin-top: -24px;
+    margin-right: 5px;
+}
+.navbarColor{
+    background-color: #00897B;
+    color: white !important;
+}
+.navbarText{
+    text-decoration: none;
+    color: white !important;
+    margin-left: -10px;
+}
+.imagePosition{
+    padding-top: 30px;
+    padding-left: 70px;
+}
+.label-as-badge{
+    border-radius: 3px !important;
+}
+.rightMargin{
+    margin-right: 10px;
+}
+.movieContent{
+    padding-top: 5px;
+    color: #00897B;
+}
+.navbarText:hover{
+    background-color: #00897B !important;
+    color: white !important;
+    text-decoration: none;
+}
+.navbarText:active{
+    background-color: #00897B !important;
+    color: white !important;
+    text-decoration: none;
+}
+.navbarText:focus{
+    background-color: #00897B !important;
+    color: white !important;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .profile-outer {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .profile {
+        padding-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.myplaceholders {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.myplaceholder img {
+    margin-left:0;
+    margin-bottom: 0;
+    border-radius: 20%;
+}
+
+.myheader {
+    margin-bottom: 0;
+}
+
+/*For images with text below*/
+.img-with-text {
+    text-align: center;
+    width: 92px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: auto;
+}
+
+span.glyphicon-time {
+    font-size: 1.5em;
+}
+
+li.w92 {
+    margin: 0 12px 0 0;
+    width: 93px;
+    padding-bottom: 8px;
+    text-align: center;
+    height: auto;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+li.w92 img {
+    display: block;
+    margin-bottom: 8px;
+    width: 92px;
+    height: 138px;
+}
+
+body.background-image {
+    background: url(../images/IMG_9195.JPG) no-repeat center center;
+    background-size: cover;
+}
+
+div.movies {
+    margin-bottom: 20px;
+}
+
+span.user{
+    font-size:17em;
+}
