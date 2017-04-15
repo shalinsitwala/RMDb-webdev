@@ -5,23 +5,32 @@
     "lastName": "Wonderland",
     "username": "alice",
     "password": "alice",
-    "roles": ["user"]
+    "roles": [
+      "user"
+    ]
   },
   {
     "_id": "234",
     "firstName": "Bob",
-    "lastName": "Hope",
+    "lastName": "Marley",
     "username": "bob",
     "password": "bob",
-    "roles": ["critic", "user"]
+    "roles": [
+      "critic",
+      "user"
+    ]
   },
   {
     "_id": "345",
-    "firstName": "Neha",
-    "lastName": "Sing",
-    "username": "neha",
-    "password": "neha",
-    "roles": ["critic", "user", "admin"]
+    "firstName": "Shalin",
+    "lastName": "Sitwala",
+    "username": "shalin",
+    "password": "shalin",
+    "roles": [
+      "critic",
+      "user",
+      "admin"
+    ]
   },
   {
     "_id": "456",
@@ -29,6 +38,9 @@
     "lastName": "Craig",
     "username": "dan",
     "password": "dan",
-    "roles": ["critic", "user"]
+    "roles": [
+      "critic",
+      "user"
+    ]
   }
 ]

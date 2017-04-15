@@ -1,13 +1,9 @@
-/**
- * CS5610: NEHA SINGH
- */
-
-(function(){
+(function () {
     angular
         .module("mrdb")
         .factory("MovieApiService", MovieApiService);
 
-    function MovieApiService($http, $q){
+    function MovieApiService($http, $q) {
 
         var api = {
             searchMovies: searchMovies,
@@ -20,13 +16,13 @@
             getTopRatedMovies: getTopRatedMovies,
             fetchAllVideos: fetchAllVideos,
             getGenres: getGenres,
-            searchMovieByGenre:searchMovieByGenre
+            searchMovieByGenre: searchMovieByGenre
         };
         var apikey = "a1aa62ec3ff2b05c1b0e804adce79c24";
         var baseUrl = "https://api.themoviedb.org/3";
         return api;
 
-            function getNowPlaying() {
+        function getNowPlaying() {
             var url = baseUrl + '/movie/now_playing?api_key=' + apikey;
             return $http.get(url);
         }
@@ -46,11 +42,12 @@
             return $http.get(url);
         }
 
-        function searchMovieByGenre(genrequery){
-            var genreSearchurl = baseUrl + '/genre/'+ genrequery+'/movies?api_key=' + apikey;
+        function searchMovieByGenre(genrequery) {
+            var genreSearchurl = baseUrl + '/genre/' + genrequery + '/movies?api_key=' + apikey;
             return $http.get(genreSearchurl);
 
         }
+
         function searchMovies(query) {
             var moviesSearchUrl = baseUrl + '/search/movie?api_key=' + apikey + '&query=' + query + '&language=en&include_adult=false';
             return $http.get(moviesSearchUrl);
@@ -74,7 +71,7 @@
         }
 
         function fetchAllVideos(movies) {
-            var promises = movies.map(function(movie) {
+            var promises = movies.map(function (movie) {
                 var videoUrl = baseUrl + '/movie/' + movie.id + '/videos?api_key=' + apikey;
                 return $http.get(videoUrl);
             });

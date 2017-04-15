@@ -47,6 +47,9 @@ a:focus {
 .light {
   font-weight: 400;
 }
+.small-text{
+    font-size: small;
+}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -135,6 +138,7 @@ a:focus {
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+  font-style: oblique;
 }
 @media (min-width: 768px) {
   .intro {
