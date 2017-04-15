@@ -9,14 +9,16 @@ var mongoose = require('mongoose');
 
 var connectionString = 'mongodb://127.0.0.1:27017/test' || process.env.MONGODB_URI;
 
+
+if (process.env.MLAB_USERNAME) {
+    connectionString = process.env.MLAB_USERNAME + ":" +
+        process.env.MLAB_PASSWORD + "@" +
+        process.env.MLAB_HOST + ':' +
+        process.env.MLAB_PORT + '/' +
+        process.env.MLAB_APP_NAME;
+}
+
 var db = mongoose.connect(connectionString);
-
-connectionString = process.env.MLAB_DB_URL_INIT +
-    process.env.MLAB_DB_USERNAME + ":" +
-    process.env.MLAB_DB_PASSWORD +
-    process.env.MLAB_DB_URL_END + '/' +
-    process.env.MLAB_DB_NAME;
-
 
 app.use(bodyParser.json());// for parsing application/json
 app.use(bodyParser.urlencoded({extended: true}));// for parsing application/x-www-form-urlencoded
