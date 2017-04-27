@@ -1,9 +1,9 @@
-(function(){
+(function () {
     angular
         .module("mrdb")
         .controller("CastController", CastController);
 
-    function CastController(UserService, $routeParams, TmdbApiService) {
+    function CastController(UserService, $routeParams, MovieApiService) {
         UserService
             .getCurrentUser()
             .then(function (response) {
@@ -12,9 +12,9 @@
 
         var vm = this;
         vm.id = $routeParams.id;
-        TmdbApiService.findCastByID(vm.id,
-            function(response){
-                response.movie_credits.cast.splice(8, response.movie_credits.cast.length-8);
+        MovieApiService.findCastByID(vm.id,
+            function (response) {
+                response.movie_credits.cast.splice(8, response.movie_credits.cast.length - 8);
                 vm.actor = response;
             })
     }
