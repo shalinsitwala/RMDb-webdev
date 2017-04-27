@@ -63,7 +63,10 @@
             <ul class="list-inline">
                 <li class="w92" ng-repeat="actor in model.movie.credits.cast" ng-if="actor.profile_path">
                     <p>
-                        <img ng-src="https://image.tmdb.org/t/p/w92{{actor.profile_path}}"></p>
+                        <a href="#/cast/{{actor.id}}">
+                            <img ng-src="https://image.tmdb.org/t/p/w92{{actor.profile_path}}">
+                        </a>
+                    </p>
                     <a class="title" href="#/cast/{{actor.id}}">{{actor.name}}</a>
                 </li>
             </ul>
